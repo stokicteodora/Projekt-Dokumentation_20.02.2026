@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use secret in an action
-        uses: some-action/with-secrets@v1
+        uses: actions/checkout@v5
         with:
           api_key: ${{ secrets.API_KEY }}
